@@ -1,5 +1,7 @@
+from flask import Flask, request, jsonify
 import cv2
 import numpy as np
+import base64
 import tkinter as tk
 from tkinter import filedialog, ttk
 from PIL import Image, ImageTk, ImageEnhance
