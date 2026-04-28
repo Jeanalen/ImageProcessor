@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Processor Online</title>
+    <style>
+        body { font-family: sans-serif; background: #2C3E50; color: white; text-align: center; padding: 50px; }
+        .card { background: #34495E; padding: 20px; border-radius: 10px; display: inline-block; }
+        input, select, button { margin: 10px; padding: 10px; border-radius: 5px; border: none; }
+        button { background: #3498DB; color: white; cursor: pointer; }
+        button:hover { background: #2980B9; }
+    </style>
+</head>
+<body>
+    <h1>Advanced Image Processing</h1>
+    <div class="card">
+        <form action="/process" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required><br>
+            <select name="filter">
+                <option value="grayscale">Grayscale</option>
+                <option value="piso">Count Piso Coins</option>
+            </select><br>
+            <button type="submit">Upload and Process</button>
+        </form>
+    </div>
+</body>
+</html>
